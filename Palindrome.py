@@ -1,4 +1,5 @@
 #This software checks if a word is a palindrome or not.
+#created by alessandro c. - only available for personal uses
 
 def palindrome(str):
     str = str.casefold().replace(" ","",-1).replace("'","",-1)
