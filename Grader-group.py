@@ -1,4 +1,5 @@
 #calculate individual grades for groupwork (given a number of students, a number of students for group and the grade of each group)
+#created by alessandro c. - only available for personal uses
 
 from math import comb
 from itertools import combinations
