@@ -1,4 +1,5 @@
 #This program creates a WordCloud from a Wikipedia Page (Input URL must be from a Wikipedia article)
+#created by alessandro c. - only available for personal uses
 
 from bs4 import BeautifulSoup
 import nltk
