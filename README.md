@@ -14,4 +14,4 @@ This program takes an URL from a Wikipedia articles and produces a WordCloud as 
 This program scrapes an italian culinary website where recipes are organized in pages (10 recipes/page) and produces a table with around 2000 recipes.
 
 ### 5 - Weekly_plan.py - Generate a weekly plan from a list of 2000 recipes and print a list
-This program uses the output of Webscraper.py to create a casual weekly table of recipes to prepare.
+This program uses the output of Webscraper.py to create a weekly table with 7 random recipes to prepare.
