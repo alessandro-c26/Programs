@@ -1,3 +1,7 @@
+#This program scrapes an italian website where recipes are organized in pages (10 recipes/page) and thematics and meal (portata). 
+#It produces an output with a list of around 2000 recipes (columns are name, difficulty, description, thematics and meal).
+#Sensible data has been censored with "@" signs.
+
 import requests
 from requests import get
 from bs4 import BeautifulSoup
@@ -15,7 +19,7 @@ difficolta_list = []
 portata_list = []
 thematics_list = []
 
-path = "/Users/alessandrocarletta/Desktop/Python/My Code/ricette.csv"
+path = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 
 pages = np.arange(1, 100)
 portata = ["Antipasti", "Primi", "Secondi-piatti", "Contorni", "Lievitati", "Piatti-Unici"]
@@ -27,7 +31,7 @@ for porta in portata:
   for theme in thematics:
     for page in pages:
 
-      pagede = requests.get("https://www.giallozafferano.it/ricette-cat/page" + str(page) + "/" + str(porta) + "/" + str(theme))
+      pagede = requests.get("https://www.@@@@@@@@@@@@@@@.it/ricette-cat/page" + str(page) + "/" + str(porta) + "/" + str(theme))
 
       soup = BeautifulSoup(pagede.text, 'html.parser')
       ricette_div = soup.find_all("div", class_="gz-content-recipe-horizontal")
