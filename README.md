@@ -9,3 +9,9 @@ This software checks if the word is a palindrome or not.
 
 ### 3 - WordCloud.py - Create WordClouds from Wikipedia articles
 This program takes an URL from a Wikipedia articles and produces a WordCloud as an output.
+
+### 4 - Webscraper.py - Create an excel with 2000 recipes automatically "scraped" in a few minutes from a website
+This program scrapes an italian website where recipes are organized in pages (10 recipes/page) and produces an output with a list of around 2000 recipes.
+
+### 5 - Weekly_plan.py - Generate a weekly plan from a list of 2000 recipes and print a list
+This program uses the output of Webscraper.py to create a casual weekly table of recipes to prepare.
