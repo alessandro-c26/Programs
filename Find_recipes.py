@@ -1,3 +1,7 @@
+# This program uses the output of webscraper.py to create a casual weekly table of recipes to prepare.
+# It continues generating weekly plans until the user types "Y". When this happens, the program outputs an excel and a list.
+# Sensible data has been censored with an "@" sign 
+
 import pandas as pd
 import random
 import datetime
@@ -5,7 +9,7 @@ from random import randint
 from random import randrange
 from requests.api import head
 
-path_to_read = "/Users/alessandrocarletta/Desktop/Python/My Code/ricette2.csv"
+path_to_read = "@@@@@@@@@@@@@@@@@@@@@@@"
 df = pd.read_csv(path_to_read, sep=",", encoding="utf-8-sig")
 df.drop(columns=["Unnamed: 0"], inplace=True)
 
@@ -33,7 +37,7 @@ while decision_variable != good_result:
 
     for number in numbers:
         df3 = df3.append(df.iloc[number])
-        url_list.append("https://ricette.giallozafferano.it/" + df.iloc[number, 1].replace(" ","-").replace(",","").replace("®","").replace("'","-") + ".html")
+        url_list.append("https://ricette.@@@@@@@@@@@@.it/" + df.iloc[number, 1].replace(" ","-").replace(",","").replace("®","").replace("'","-") + ".html")
         
         df2.loc[random.choice(index), columns[day]] = df.iloc[int(number), 1]
         day = int(day) + 1
@@ -51,8 +55,8 @@ hour = str(datetime.datetime.now().hour)
 minute = str(datetime.datetime.now().minute)
 second = str(datetime.datetime.now().second)
 
-path_export1 = "/Users/alessandrocarletta/Desktop/Cuisine Montmorency/New/Schedule - week " + time + " - " + hour + "h" + minute + ".csv"
-path_export2 = "/Users/alessandrocarletta/Desktop/Cuisine Montmorency/New/List - week " + time + " - " + hour + "h" + minute + ".csv"
+path_export1 = "/Users/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/Schedule - week " + time + " - " + hour + "h" + minute + ".csv"
+path_export2 = "/Users/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/New/List - week " + time + " - " + hour + "h" + minute + ".csv"
 
 df2.to_csv(path_export1, encoding="utf-8-sig")
 df_final.to_csv(path_export2, encoding="utf-8-sig")
