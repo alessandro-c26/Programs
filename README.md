@@ -1,5 +1,5 @@
 # General Purpose Programs
-This repository contains a list of programs developed to solve various problems:
+This repository contains a list of programs that I developed to solve various problems:
 
 ### 1 - Grader-group.py - Grade individuals after their groupwork
 This Program takes as input the number of students, the number of students for group, their names and the group grades and gives as output all the possible group combinations and the individualized grades.
