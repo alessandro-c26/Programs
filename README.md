@@ -4,7 +4,7 @@ This repository contains a list of programs that I developed to solve various pr
 ### 1 - Grader-group.py - Grade individuals after their groupwork
 This Program takes as input the number of students, the number of students for group, their names and the group grades and gives as output all the possible group combinations and the individualized grades.
 
-### 2 - Medical_Directory.py - Scrape a medical directory to get a list of doctors
+### 2 - Medical_directory.py - Scrape a medical directory to get a list of doctors
 This scraper uses a mix of Selenium, BeautifulSoup, and Pandas to navigate a site (a medical directory) and scrape a list of doctors. Based on the location, that can be chosen freely by the user, the Scraper is able to produce a .csv list of up to 1000 doctors complete with adresses, reimbursement schemes, and personal URLs in 10 minutes maximum.
 
 ### 3 - Palindrome.py - Check if a word is a palindrome
