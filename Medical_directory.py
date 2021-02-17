@@ -1,6 +1,6 @@
 #This scraper uses a mix of Selenium and BeautifulSoup to navigate a site (a medical directory) and scrape a list of doctors.
 #Only for explicative reasons, not to be used without the written consent of site owner.
-#Confidential data like URLs and User's paths have been censored with a "@" sign.
+#Sensible data like URLs and User's paths have been censored with a "@" sign.
 
 import time
 from selenium import webdriver
