@@ -2,7 +2,6 @@
 #created by alessandro c. - only available for personal uses
 
 from bs4 import BeautifulSoup
-import nltk
 import requests 
 import re
 import numpy as np
